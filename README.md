@@ -47,8 +47,8 @@ User → ADK Agent → MCP Toolbox → BigQuery → Response
 ---
 
 ## 📸 Output Screenshot
-![Output](<img width="1366" height="768" alt="MCP" src="https://github.com/user-attachments/assets/e1cf78ed-89f6-4c79-92cb-fc6eb9240e83" />
-)
+![Output](https://github.com/user-attachments/assets/e1cf78ed-89f6-4c79-92cb-fc6eb9240e83)
+
 ---
 
 ## 🚀 Future Improvements
