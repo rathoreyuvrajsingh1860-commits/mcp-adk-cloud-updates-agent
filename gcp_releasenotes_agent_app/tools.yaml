@@ -1,0 +1,20 @@
+sources:
+  my-bq-source:
+    kind: bigquery
+    project: asymmetric-rite-490709-d3
+
+tools:
+  search_release_notes_bq:
+    kind: bigquery-sql
+    source: my-bq-source
+    description: Search Google Cloud release notes
+    parameters:
+      - name: query
+        type: string
+        description: Search keyword for release notes
+    statement: |
+      SELECT *
+      FROM `bigquery-public-data.google_cloud_release_notes.release_notes`
+      WHERE LOWER(description) LIKE LOWER(CONCAT('%', @query, '%'))
+      ORDER BY release_date DESC
+      LIMIT 5;
